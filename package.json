@@ -8,7 +8,10 @@
     "start": "node index.js",
     "dev": "nodemon index.js",
     "migrate": "sequelize db:migrate",
-    "seed": "sequelize db:seed:all"
+    "seed": "sequelize db:seed:all",
+    "migration:generate": "sequelize-cli migration:generate --name",
+    "migration:create": "sequelize-cli migration:create --name",
+    "model:generate": "sequelize-cli model:generate --name"
   },
   "keywords": [],
   "author": "",
