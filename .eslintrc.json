@@ -1,0 +1,20 @@
+{
+  "parserOptions": {
+     "ecmaVersion": 2018
+  },
+  "env": {
+     "es6": true,
+     "node": true,
+     "mocha": true
+  },
+  "rules": {
+     "indent": ["error", 4], // Indentación con 4 espacios
+     "semi": ["error", "always"], // Puntos y coma siempre
+     "comma-dangle": ["error", "always-multiline"]
+  },
+  "extends": [
+     "standard"
+  ]
+}
+
+  
