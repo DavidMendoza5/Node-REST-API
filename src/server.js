@@ -1,5 +1,6 @@
 const express = require('express');
 const sequelize = require('./database/connection');
+const routes = require('./routes/index');
 
 const app = express();
 
@@ -15,6 +16,9 @@ const createConnection = async () => {
 
 createConnection();
 
-app.get('/', (req, res) => res.send('HOLA MUNDO'));
+app.use(express.urlencoded({ extended: false }));
+app.use(express.json());
+
+app.use('/api', routes);
 
 module.exports = app;
