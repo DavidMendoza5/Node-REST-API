@@ -1,4 +1,3 @@
-// const { PostgresDialect } = require('@sequelize/postgres');
 const { Sequelize } = require('sequelize');
 const { DATABASE_HOST, DATABASE_PASSWORD, DATABASE_PORT, DATABASE_USERNAME, DATABASE_NAME } = require('../config');
 

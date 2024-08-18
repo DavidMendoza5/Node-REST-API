@@ -9,6 +9,7 @@
     "dev": "nodemon index.js",
     "migrate": "sequelize db:migrate",
     "seed": "sequelize db:seed:all",
+    "seed:generate": "sequelize-cli seed:generate --name",
     "migration:generate": "sequelize-cli migration:generate --name",
     "migration:create": "sequelize-cli migration:create --name",
     "model:generate": "sequelize-cli model:generate --name"
@@ -19,6 +20,7 @@
   "dependencies": {
     "@sequelize/postgres": "^7.0.0-alpha.41",
     "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "joi": "^17.13.3",

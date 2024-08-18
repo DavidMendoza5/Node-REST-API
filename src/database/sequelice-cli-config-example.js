@@ -1,10 +1,12 @@
+const { DATABASE_HOST, DATABASE_PASSWORD, DATABASE_PORT, DATABASE_USERNAME, DATABASE_NAME } = require('../config');
+
 module.exports = {
     development: {
-        username: 'username',
-        password: 'password',
-        database: 'database',
-        host: 'host',
-        port: 5432,
+        username: DATABASE_USERNAME,
+        password: DATABASE_PASSWORD,
+        database: DATABASE_NAME,
+        host: DATABASE_HOST,
+        port: Number(`${DATABASE_PORT}`),
         dialect: 'postgres',
     },
 };
